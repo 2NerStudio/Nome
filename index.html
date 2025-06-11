@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramática Divertida - Jogo Educativo</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="public/imagens/logo-gramatica.png" type="image/png">
+</head>
+<body>
+    <div id="root">
+        <!-- O React renderizará o conteúdo aqui -->
+    </div>
+
+    <!-- Menu de Apresentação (enquanto o React carrega) -->
+    <div class="loading-menu">
+        <header class="menu-header">
+            <img src="public/imagens/logo-gramatica.png" alt="Logo Gramática Divertida" class="logo">
+            <h1>Gramática Divertida</h1>
+            <p class="subtitle">Jogo online sobre gramática geral, com itens baseados no livro do estudante</p>
+        </header>
+
+        <div class="menu-content">
+            <div class="description-box">
+                <h2>Sobre o Jogo</h2>
+                <p>Este jogo foi desenvolvido como trabalho de eletiva para ajudar estudantes a aprenderem gramática de forma interativa e divertida.</p>
+                <p>Todos os conteúdos são baseados no livro do estudante e foram organizados em quizzes desafiadores que testam seu conhecimento.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Conteúdo Completo</h3>
+                    <p>Todos os tópicos gramaticais do currículo escolar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Sistema de Pontos</h3>
+                    <p>Acumule pontos e desbloqueie níveis mais difíceis</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Feedback Imediato</h3>
+                    <p>Explicações detalhadas para cada resposta</p>
+                </div>
+            </div>
+
+            <div class="loading-animation">
+                <p>Carregando o jogo...</p>
+                <div class="loader"></div>
+            </div>
+        </div>
+
+        <footer class="menu-footer">
+            <p>Trabalho de Eletiva - © 2023 Gramática Divertida</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/main.jsx"></script>
+</body>
+</html>
