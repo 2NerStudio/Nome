@@ -149,3 +149,85 @@ body.react-loaded .loading-menu {
 .nav-link:hover {
   color: #3498db;
 }
+
+/* Sistema de Progresso */
+.progresso-container {
+  margin: 20px 0 30px;
+  width: 100%;
+}
+
+.progresso-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.progresso-pontos {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.progresso-barra {
+  height: 6px;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progresso-barra-interna {
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.progresso-marcadores {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.marcador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bdc3c7;
+  transition: background-color 0.3s;
+}
+
+.marcador.respondido {
+  background-color: #3498db;
+}
+
+/* Estilos para o Quiz */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.resultado-container {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Melhorias para os botões de resposta */
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.transition-colors {
+  transition: background-color 0.2s, border-color 0.2s;
+}
